@@ -1,0 +1,53 @@
+.menu{
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    font-size: 28px;
+    border-bottom: 1px solid darkslategray;
+}
+.menu_tall{
+    height: 50px;
+}
+.menu-name{
+    display: inline-block;
+    width: 30%;
+    height: 40px;
+    vertical-align: top;
+}
+.menu-number{
+    display: inline-block;
+    width: 30%;
+    height: 40px;
+    vertical-align: top;
+}
+.menu-buttons{
+    width: 38%;
+    display: inline-block;
+    vertical-align: top;
+}
+.button{
+    border-radius: 7px;
+    height: 30px;
+    display: inline-block;
+    color: aliceblue;
+}
+.button-add{
+    background-color: cornflowerblue;
+}
+.button-update{
+    background-color: aqua;
+}
+.button-remove{
+    background-color: red;
+}
+.button-update{
+    background-color: sandybrown;
+}
+.selected{
+    background-color: aqua;
+}
+.clickable{
+    cursor: pointer;
+}
+
