@@ -8,10 +8,10 @@ import {InMemoryWebApiModule} from 'angular-in-memory-web-api';
 import {InMemoryDataService}  from './in-memory-data.service';
 
 import {AppComponent} from "./app.component";
-import {TaskListComponent} from "./todo/components/task-list.component";
-import {TaskComponent} from "./todo/components/task.component";
 import {ContactsComponent} from "./contacts/components/contacts.component";
 import {ContactService} from "./contact.service";
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {AboutComponent} from "./about/about.component";
 
 
 
@@ -21,13 +21,13 @@ import {ContactService} from "./contact.service";
         FormsModule,
         HttpModule,
         AppRoutingModule,
-        InMemoryWebApiModule.forRoot(InMemoryDataService)
+        InMemoryWebApiModule.forRoot(InMemoryDataService),
+        NgbModule.forRoot()
     ],
     declarations: [
         AppComponent,
-        TaskComponent,
-        TaskListComponent,
-        ContactsComponent
+        ContactsComponent,
+        AboutComponent
     ],
     providers: [ContactService],
     bootstrap: [AppComponent]

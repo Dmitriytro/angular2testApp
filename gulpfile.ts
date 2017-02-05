@@ -58,7 +58,8 @@ gulp.task("libs", () => {
             'rxjs/**/*.js',
             'zone.js/dist/**',
             '@angular/**/bundles/**',
-            'angular-in-memory-web-api/**/*.js'
+            'angular-in-memory-web-api/**/*.js',
+            '@ng-bootstrap/ng-bootstrap/**/*.js'
         ], {cwd: "node_modules/**"}) /* Glob required here. */
         .pipe(gulp.dest("build/lib"));
 });

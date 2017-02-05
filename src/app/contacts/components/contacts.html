@@ -9,16 +9,16 @@
         <input #newName [(ngModel)]="selectedContact.name" placeholder="name" class="menu-name" />
         <input #newNumber [(ngModel)]="selectedContact.value" placeholder="number" class="menu-number" />
         <div class="menu-buttons">
-            <button class="button button-add clickable" (click)="add([newName.value,newNumber.value,selectedContact]); newName.value = newNumber.value = ''">Add Contact</button>
-            <button class="button button-update clickable" (click)="update(selectedContact); newName.value = newNumber.value = ''">Update</button>
+            <button class="btn btn-success btn-xs clickable" (click)="add([newName.value,newNumber.value,selectedContact]); newName.value = newNumber.value = ''">Add Contact</button>
+            <button class="btn btn-warning btn-xs clickable" (click)="update(selectedContact,null); newName.value = newNumber.value = ''">Update</button>
         </div>
     </div>
     <div *ngFor="let contact of contacts" class="menu menu_tall" [class.selected]="contact === selectedContact">
         <div class="menu-name">{{contact.name}}</div>
         <div class="menu-number">{{contact.value}}</div>
         <div class="menu-buttons">
-            <button class="button button-remove clickable" (click)="delete(contact)">Remove</button>
-            <button class="button button-edit clickable" (click)="edit(contact)">Edit</button>
+            <button class="btn btn-danger btn-xs clickable" (click)="delete(contact)">Remove</button>
+            <button class="btn btn-warning btn-xs clickable" (click)="edit(contact)">Edit</button>
         </div>
     </div>
 </div>

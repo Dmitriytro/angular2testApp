@@ -1,11 +1,11 @@
 import {Routes, RouterModule} from "@angular/router";
-import {TaskListComponent} from "./todo/components/task-list.component";
+import {AboutComponent} from "./about/about.component";
 import {ContactsComponent} from "./contacts/components/contacts.component";
 import {ModuleWithProviders} from "@angular/core";
 
 const appRoutes: Routes = [
     {path: '', redirectTo: 'contacts', pathMatch: 'full'},
-    {path: 'tasks', component: TaskListComponent, data: {title: 'TaskList'}},
+    {path: 'about', component: AboutComponent, data: {title: 'AboutList'}},
     {path: 'contacts', component: ContactsComponent, data: {title: 'ContactList'}}
 ];
 
